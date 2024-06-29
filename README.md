@@ -1,5 +1,5 @@
-# Javascript t�m projeler 
-30 saatlik javascript e�itimi projeleri ile tekrar ba�tan a�a��ya yaz�lm��t�r
+# Javascript tüm projeler 
+30 saatlik javascript eğitimi projeleri ile tekrar baştan aşağıya yazılmıştır
 
 [kurs linki](https://www.udemy.com/course/javascript-egitimi/)
 
