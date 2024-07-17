@@ -6,7 +6,7 @@ let ages = [
     20,
     10,
     18,
-    25,
+    25
 ];
 
 for (let i = 0; i < ages.length; i++){
