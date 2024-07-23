@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fill{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.mouse-area{
+    height: 300px;
+    width:  300px;
+    background-color: slateblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+}
