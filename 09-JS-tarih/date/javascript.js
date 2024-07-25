@@ -18,4 +18,4 @@ console.log("tarih        =", now.toDateString());
 console.log("string tarih =", now.toTimeString());
 console.log("string local =", now.toLocaleDateString());
 
-// * uzeyir-yariz {date} * \\
+// * uzeyir-yariz {250720242309} * \\
