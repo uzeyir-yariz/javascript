@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>math-quiz-project</title>
+  </head>
+  <body>
+    <h1>math-quiz-project</h1>
+    <hr />
+    <h2>example area</h2>
+
+    <section id="header">
+      <div class="bg-white text-center">
+        <div class="container">
+          <h3 class="text-danger">matematik</h3>
+        </div>
+        <div>
+          <p>doğru cevap oranı <span id="result">0%</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions">
+      <div>
+        <div class="container">
+          <form class="text-white bg-dark alert" id="main-form">
+            
+            <!-- * soru 1  -->
+            <h4 class="mt-4 mb-4">2 + 2</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_1" id="quest_y1" value="F">
+                7
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_1" id="quest_n1" value="T">
+                4
+              </label>
+            </div>
+
+            <!-- * soru 2  -->
+            <h4 class="mt-4 mb-4">8 + 2</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_2" id="quest_y2" value="F">
+                7
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_2" id="quest_n2" value="T">
+                10
+              </label>
+            </div>
+
+            <!-- * soru 3  -->
+            <h4 class="mt-4 mb-4">5 - 2</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_3" id="quest_y3" value="T">
+                3
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_3" id="quest_n3" value="F">
+                7
+              </label>
+            </div>
+
+            <!-- * soru 4  -->
+            <h4 class="mt-4 mb-4">5 * 2</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_4" id="quest_y4" value="F">
+                4
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_4" id="quest_n4" value="T">
+                10
+              </label>
+            </div>
+
+            <input type="submit" value="gönder" class="btn-primary btn btn-block mt-4 mb-4">
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <script src="javascript.js"></script>
+</html>
+  
