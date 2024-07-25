@@ -18,10 +18,13 @@ const students = [
 // * önemli nokta
 const new_student_point = students.map((student) => {
   if (student.point < 50) {
-    return {
+    student.point += 15;
+    return student;
+
+    /* return {
       name: student.name,
       point: student.point + 15,
-    };
+    }; */
   } else {
     return student;
   }
