@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>project-ofice-survey</title>
+  </head>
+  <body>
+    <h1>project-ofice-survey</h1>
+    <hr />
+    <h2>example area</h2>
+
+    <section id="header">
+      <div class="bg-white text-center">
+        <div class="container">
+          <h3 class="text-danger">evden çalışmak</h3>
+        </div>
+        <div>
+          <p><span id="result">0%</span> ofise dönmek istiyorum </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions">
+      <div>
+        <div class="container">
+          <form class="text-white bg-dark alert" id="main-form">
+            
+            <!-- * soru 1  -->
+            <h4 class="mt-4 mb-4">ofiste daha verimli çalışıyorum</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_1" id="quest_y1" value="E">
+                evet
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_1" id="quest_n1" value="H">
+                hayır
+              </label>
+            </div>
+
+            <!-- * soru 2  -->
+            <h4 class="mt-4 mb-4">ofise tam zamanlı işe dönmek istiyorum</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_2" id="quest_y2" value="E">
+                evet
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_2" id="quest_n2" value="H">
+                hayır
+              </label>
+            </div>
+
+            <!-- * soru 3  -->
+            <h4 class="mt-4 mb-4">evdeyken teknik sorunlar daha zor çözülüyor</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_3" id="quest_y3" value="E">
+                evet
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_3" id="quest_n3" value="H">
+                hayır
+              </label>
+            </div>
+
+            <!-- * soru 4  -->
+            <h4 class="mt-4 mb-4">evdeyken haftalık jiradaki taskları yetiştirmekte zorlanıyorum</h4>
+            <div class="form-check">
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_4" id="quest_y4" value="E">
+                evet
+              </label>
+
+              <label class="form-check-label d-block">
+                <input type="radio" class="form-check-input" name="quest_4" id="quest_n4" value="H">
+                hayır
+              </label>
+            </div>
+
+            <input type="submit" value="gönder" class="btn-primary btn btn-block mt-4 mb-4">
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <script src="javascript.js"></script>
+</html>
+  
