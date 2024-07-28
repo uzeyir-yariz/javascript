@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/8fdc27e80b.js" crossorigin="anonymous"></script>
+    <title>todo-delete</title>
+  </head>
+  <body>
+    <h1>todo-delete</h1>
+    <hr />
+    <h2>example area</h2>
+
+    <main class="container mt-4">
+      <div class="bg-dark alert">
+
+        <!-- * arama kısmı -->
+        <header class="text-center text-light mb-3">
+          <h3>TODO-LIST</h3>
+          <hr class="bg-warning">
+          <form class="search">
+            <input class="form-control" type="text" name="search-text" placeholder="Ara...">
+          </form>
+        </header>
+
+        <!-- * liste kısmı -->
+        <h4 class="alert text-light font-italic font-weight-light text-center mesage" style="display: none;">yapılacaklar listesi boş</h4>
+        <ul class="list-group text-light todos">
+
+          <li class="list-group-item d-flex justify-content-between align-items-center bg-info mb-4">
+            <span>demoman</span>
+            <i class="fa-solid fa-trash delete btn btn-danger"></i>
+          </li>
+          
+        </ul>
+
+        <!-- * listeye eleman ekle -->
+        <form class="add">
+          <input class="form-control" type="text" name="add_list" placeholder="ekle...">
+        </form>
+      </div>
+    </main>
+  </body>
+  <script src="javascript.js"></script>
+</html>
