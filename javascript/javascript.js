@@ -16,7 +16,7 @@ document.getElementById('copyButton').addEventListener('click', function() {
     const timeInput = document.getElementById('timeInput');
     timeInput.select();
     document.execCommand('copy');
-    alert('Zaman kopyalandı: ' + timeInput.value);
+    // alert('Zaman kopyalandı: ' + timeInput.value);
 });
 
 // İlk yüklemede zamanı güncelle
