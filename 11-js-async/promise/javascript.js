@@ -49,4 +49,4 @@ getTodos("json/user.json")
 //   console.log("başarısız", err)
 // })
 
-// * uzeyir-yariz {290720241342} * \\
+// * uzeyir-yariz {290720241936} * \\
