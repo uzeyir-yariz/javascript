@@ -4,8 +4,10 @@
 const req = new XMLHttpRequest();
 
 req.addEventListener("readystatechange", () => {
-    if(req.readyState === 4 && req.status === 200){ 
+    if(req.readyState === 4 && req.status === 200){ // * başarılı cevap aldım 
         console.log(req.responseText)
+    } else if(req.readyState === 4){                // * başarılı cevap alınmadı çünkü status 200 değildi
+        console.log("cevap alamadım");
     }
 });
 
@@ -48,4 +50,4 @@ req.addEventListener("readystatechange", () => {
 req.open("GET", "https://jsonplaceholder.typicode.com/todos");
 req.send();
 
-// * uzeyir-yariz {date} * \\
+// * uzeyir-yariz {290720241239} * \\
