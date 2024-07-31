@@ -1,5 +1,5 @@
-// * uzeyir-yariz {310720240951} * \\
-// > {sub-class}
+// * uzeyir-yariz {310720241011} * \\
+// > {super}
 
 class User {
   constructor(username, email) {
@@ -18,7 +18,12 @@ class User {
   }
 }
 
-class Admin extends User {
+class Admin extends User { // User'den üretilmiş Admin. sub class
+  constructor(username, email, title) {
+    super(username, email); // atama yapmazsam buraya yazabilirim
+    this.title = title;
+  }
+
   delete_user(user) {
     users = users.filter((us) => us !== user); // filtrelenmiş hali
   }
@@ -28,12 +33,12 @@ const user_1 = new User("Üzeyir", "uzeyiryariz13@gmail.com");
 const user_2 = new User("Arthur", "art@gmail.com");
 
 // admin olan
-const user_3 = new Admin("Azura", "Azu@gmail.com");
+const user_3 = new Admin("Azura", "Azu@gmail.com", "main_admin"); // admine özel parametre
 
 let users = [user_1, user_2, user_3];
 
 user_3.delete_user(user_1); // silme işlemi
 
-console.log(users);
+console.log(user_3);
 
-// * uzeyir-yariz {310720241011} * \\
+// * uzeyir-yariz {310720241016} * \\
