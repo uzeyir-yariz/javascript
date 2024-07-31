@@ -21,4 +21,4 @@ const user_2 = new User("Arthur", "art@gmail.com");
 // console.log(user_1, user_2);
 console.log(user_1.login(), user_2.logout());
 
-// * uzeyir-yariz {date} * \\
+// * uzeyir-yariz {310720240933} * \\
