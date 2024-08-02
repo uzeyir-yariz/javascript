@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>doviz-çevirici</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>doviz çeviricisi</h1>
+      <div class="first-currency-cont">
+        <select name="select_first_currency" id="select_first_currency" title="select_first_currency">
+          <option value="USD" selected>USD</option>
+          <option value="EUR">EUR</option>
+          <option value="AUD">AUD</option>
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="JPY">JPY</option>
+        </select>
+        <input title="first-currency-input" type="number" min="0" value="1" name="first-currency-input" id="currency_input">
+      </div>
+      <hr>
+      <div class="second-currency-cont">
+        <select name="select_second_currency" id="select_second_currency" title="select_second_currency">
+            <option value="TRY" selected>TL</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="AUD">AUD</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="JPY">JPY</option>
+        </select>
+        <p id="currency_result"></p>
+      </div>
+
+      <span id="exchange">1 USD > 25 TL</span>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>
