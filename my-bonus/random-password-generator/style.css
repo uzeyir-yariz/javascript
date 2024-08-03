@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 32px;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+
+  .box {
+    z-index: -1;
+    position: absolute;
+    background: white;
+    top: 0;
+    border-radius: 15px;
+
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .password {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: dashed 1px;
+    input {
+      outline: none;
+      border: none;
+    }
+    i{
+        color: blue;
+        cursor: pointer;
+    }
+  }
+}
+
+.opt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 16px;
+
+    .password-length{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        input{
+            width: 50%;
+            padding: 5px;
+        }
+    }
+}
+
+
+.alert {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all ease-in-out 500ms;
+
+  bottom: -50px;
+  
+  background: chartreuse;
+  padding: 0.2rem;
+  border-radius: 25px;
+  z-index: -2;
+}
+
+.active{
+    bottom: 0;
+}
+
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}

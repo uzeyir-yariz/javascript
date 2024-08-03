@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>random password</title>
+</head>
+<body>
+    <div class="container">
+        <span class="box"></span>
+        <h1>şifre üret</h1>
+        <div class="password">
+            <input readonly type="text" title="password-text" name="password-text" id="password-text" placeholder="yeni şifre">
+            <i class="fa-solid fa-copy" id="copy"></i>
+        </div>
+        <button title="random-generator" id="random-generator" class="button-74">üret</button>
+        <div class="alert active" id="alert">şifre kopyalandı</div>
+        <div class="opt">
+            <div class="password-length">
+                <label>şifre uzunluğu</label>
+                <input title="user_length" type="number" name="user-length" id="user_length" min="8" value="8" max="24">
+            </div>
+            <div class="user-select-opt">
+                <label><input type="checkbox" name="include-uppdercase" id="include-uppdercase"> ABC...</label>
+                <label><input type="checkbox" name="include-lowercase" id="include-lowercase"> abc...</label>
+                <label><input type="checkbox" name="include-numbers" id="include-numbers"> 1234...</label>
+                <label><input type="checkbox" name="include-symbols" id="include-symbols"> %&/+...</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="javascript.js"></script>
+</html>
