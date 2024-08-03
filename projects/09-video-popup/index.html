@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>video popup</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+        <img class="img" src="https://images.pexels.com/photos/1738636/pexels-photo-1738636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <h2 class="heading">kameralar</h2>
+        <p class="textContent">kamera mercekleri hakkında daha fazla bilgi için izleyin</p>
+        <button class="btn button-84" id="openPopup">izle</button>
+    </div>
+
+    <div class="videoContainer active" id="videoPopup">
+        <video class="video" src="aperture.mp4" controls></video>
+        <i class="fa-solid fa-x fa-2xl" id="closePopup"></i>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
