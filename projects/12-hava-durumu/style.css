@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 600px;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.heading {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+  align-items: center;
+  border: dashed 1px;
+  border-radius: 15px;
+  input {
+    border: none;
+    padding: 0.3rem;
+    outline: none;
+    background: none;
+    width: 70%;
+  }
+  .city{
+    border: 15px 0px 0px 15px;
+  }
+  .city-button {
+    background-color: yellow;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    width: 30%;
+  }
+  .city-button:hover {
+    background-color: chartreuse;
+  }
+}
+
+.icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.temperature {
+  margin-bottom: 0.5rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+
+  span {
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: slateblue;
+  }
+}
+
+.description {
+  color: red;
+  font-weight: 100;
+  font-style: italic;
+}
