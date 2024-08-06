@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{font-size: 20px;}
+body{font-family: Arial, sans-serif;}
+::-webkit-scrollbar {width: 0;}
+
+section#home     {background: url(https://images.pexels.com/photos/1662298/pexels-photo-1662298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center / cover; }
+section#about    {background: red;}
+section#services {background: green;}
+section#prices   {background: orange;}
+section#contact  {background: grey;}
+
+section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+}
+
+/* menü bar */
+.menu-bar {
+  position: fixed;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+.change .bar2 {opacity: 0;}
+.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
+
+/* overlay */
+.overlay{
+  position: fixed;
+  transform: translateX(-100vw);
+
+  nav{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    a{width: 100vw; display: flex; align-items: center; justify-content: center; height: 20%; color: white; text-decoration: none; font-size: 25px; letter-spacing: 3px;}
+    a:nth-child(1){background: blue;}
+    a:nth-child(2){background: red;}
+    a:nth-child(3){background: green;}
+    a:nth-child(4){background: orange;}
+    a:nth-child(5){background: grey;}
+  }
+}
+
+.overlay-slide-right{
+  transform: translateX(0);
+  transition: all 500ms ease-in-out;
+}
+
+.overlay-slide-left{
+  transform: translateX(-100vw);
+  transition: all 1000ms ease-in-out;
+}
+
+.slide-in-1 {animation: slide-in 0.4s linear 0.2s both;}
+.slide-in-2 {animation: slide-in 0.4s linear 0.4s both;}
+.slide-in-3 {animation: slide-in 0.4s linear 0.6s both;}
+.slide-in-4 {animation: slide-in 0.4s linear 0.8s both;}
+.slide-in-5 {animation: slide-in 0.4s linear 1.0s both;}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-out-1 {animation: slide-out 0.4s linear 1.0s both;}
+.slide-out-2 {animation: slide-out 0.4s linear 0.8s both;}
+.slide-out-3 {animation: slide-out 0.4s linear 0.6s both;}
+.slide-out-4 {animation: slide-out 0.4s linear 0.4s both;}
+.slide-out-5 {animation: slide-out 0.4s linear 0.2s both;}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
