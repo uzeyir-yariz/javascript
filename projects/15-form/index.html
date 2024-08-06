@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="title">kayıt formu</h1>
+
+      <form id="form" novalidate>
+        <div class="form-group">
+          <label>isim:</label>
+          <input required title="name" type="text" minlength="3" maxlength="24" id="name" name="name" placeholder="adınızı giriniz...">
+        </div>
+
+        <div class="form-group">
+          <label>soy ad:</label>
+          <input required title="sur-name" type="text" minlength="3" maxlength="24" id="sur-name" name="sur_name" placeholder="soy adınızı giriniz...">
+        </div>
+
+        <div class="form-group">
+          <label>email:</label>
+          <input required title="email" type="email" id="email" name="email" placeholder="example@gmail.com">
+        </div>
+
+        <div class="form-group">
+          <label>telefon:</label>
+          <input required title="phone" type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="555-555-5555...">
+        </div>
+
+        <div class="form-group">
+          <label>şifre:</label>
+          <input required title="password" type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" id="password" name="password" placeholder="şifrenizi giriniz...">
+        </div>
+
+        <div class="form-group">
+          <label>şifre tekrarı:</label>
+          <input required title="re-password" type="password" id="re-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" name="re-password" placeholder="lütfen şifrenizi tekrar giriniz">
+        </div>
+
+        <div class="form-group">
+          <label>adres:</label>
+          <textarea required title="address" name="address" id="address" placeholder="adres giriniz"></textarea>
+        </div>
+
+        <button class="button-23" type="submit" id="">kaydol</button>
+      </form>
+      <div class="mesage" id="mesage">
+        <h3 id="alert-title">lütfen tüm alanları doldurunuz</h3>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
