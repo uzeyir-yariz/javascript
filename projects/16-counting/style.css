@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: slateblue;
+}
+
+.container {
+  background: white;
+  min-width: 600px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  .remaing {
+    h1{margin: 20px 0;}
+    .remaing_form {
+      display: flex;
+      gap: 15px;
+      flex-direction: column;
+
+      input{
+        padding: 15px 5px;
+        border-radius: 25px;
+        outline: none;
+      }
+    }
+  }
+
+  .time_container{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    .timer{
+      display: flex;
+      padding: 15px;
+      list-style: none;
+      justify-content: space-around;
+
+      li>span{
+        color: red;
+        font-size: 50px;
+      }
+    }
+  }
+
+  .complete{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* ! button */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+[hidden] { display: none !important; } /* hidden important olması gerekiyor yoksa çalışmıyor düzgün */

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>counting</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="remaing" id="remaing">
+        <h1>etkinliğe ne kadar var ?</h1>
+        <form id="remaing_form" class="remaing_form">
+          <label>tarih seçiniz</label>
+          <input type="date" name="date_picker" min="" id="date_picker" title="spe_date">
+          <input type="submit" class="button-54" id="hesapla" value="hesapla">
+        </form>
+      </div>
+
+      <div class="time_container" hidden id="time_container">
+        <h1>kalan süre</h1>
+        <ul class="timer">
+          <li><span id="days_spa">10</span>gün</li>
+          <li><span id="hours_spa">10</span>saat</li>
+          <li><span id="minutes_spa">10</span>dakika</li>
+          <li><span id="seconds_spa">10</span>saniye</li>
+        </ul>
+        <button type="button" id="reset" class="button-54">sıfırla</button>
+      </div>
+
+      <div class="complete" hidden id="complete">
+        <h1>vakit geldi</h1>
+        <button type="button" class="button-54" id="complete_btn">yeniden hesapla</button>
+      </div>
+    </div>
+
+  </body>
+  <script src="javascript.js"></script>
+</html>
