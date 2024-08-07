@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>taş-kağıt-makas</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>taş - kağıt - makas</h1>
+      </div>
+      <h2>user <span class="choice" id="user_choice"></span> - skor: <span class="score" id="user_score">0</span></h2>
+      <div class="player_container" id="player">
+        <i onclick="select('rock')" id="user_rock" title="taş" class="icon fa-regular fa-hand-back-fist"></i>
+        <i onclick="select('paper')" id="user_paper" title="kağıt" class="icon fa-regular fa-hand"></i>
+        <i onclick="select('scissors')" id="user_scissors" title="makas" class="icon fa-regular fa-hand-scissors"></i>
+      </div>
+
+      <h2>CPU <span class="choice" id="CPU_choice"></span> - skor: <span class="score" id="CPU_score">0</span></h2>
+      <div class="player_container" id="CPU">
+        <i value="rock" id="CPU_rock" title="taş" class="icon fa-regular fa-hand-back-fist"></i>
+        <i value="paper" id="CPU_paper" title="kağıt" class="icon fa-regular fa-hand"></i>
+        <i value="scissors" id="CPU_scissors" title="makas" class="icon fa-regular fa-hand-scissors"></i>
+      </div>
+
+      <div class="reset_container">
+        <i id="game_reset" title="sıfırla" class="game_reset icon fa-solid fa-rotate"></i>
+      </div>
+
+      <div class="result_container">
+        <h3 class="result_text" id="result_text"></h3>
+      </div>
+    </div>
+    
+    <div hidden class="mesage_container" id="user_won"><h1>USER kazandı</h1><i title="sıfırla" class="game_reset icon fa-solid fa-rotate"></i></div>
+    <div hidden class="mesage_container" id="CPU_won" ><h1>CPU kazandı</h1><i title="sıfırla" class="game_reset icon fa-solid fa-rotate"></i></div>
+    <div hidden class="mesage_container" id="draw" ><h1>berabere</h1><i title="sıfırla" class="game_reset icon fa-solid fa-rotate"></i></div>
+
+    <script src="javascript.js"></script>
+    <script src="confetti.js"></script>
+  </body>
+</html>
