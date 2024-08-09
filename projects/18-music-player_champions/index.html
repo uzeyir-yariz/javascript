@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>music-player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img_container">
+        <img src="images/bootstrap.png" alt="">
+      </div>
+
+      <div class="title_container">
+        <h2 class="title" id="title">bootstrap</h2>
+        <h3 class="creator" id="creator">uzeyir-yariz</h3>
+      </div>
+
+      <audio src="music/bootstrap.mp3"></audio>
+
+      <div class="progress_container" id="progress_container">
+        <div class="time_container">
+          <span id="current_time">0:00</span>
+          <span id="total_time">2:00</span>
+        </div>
+
+        <div class="progress" id="progress">
+          <div class="progress_fill" id="progress_fill"></div>
+        </div>
+
+        <div class="music_control_container">
+          <i class="fa fa-backward" id="prev"></i>
+          <i class="fa fa-play" id="play"></i>
+          <i class="fa-solid fa-forward" id="next"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>
