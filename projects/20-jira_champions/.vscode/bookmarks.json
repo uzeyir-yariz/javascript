@@ -1,0 +1,24 @@
+{
+	"files": [
+		{
+			"path": "index.html",
+			"bookmarks": [
+				{
+					"line": 24,
+					"column": 0,
+					"label": "todo"
+				},
+				{
+					"line": 48,
+					"column": 0,
+					"label": "inProgress"
+				},
+				{
+					"line": 72,
+					"column": 0,
+					"label": "done"
+				}
+			]
+		}
+	]
+}

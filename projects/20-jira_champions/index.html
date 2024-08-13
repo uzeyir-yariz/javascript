@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>jira</title>
+  </head>
+  <body class="dark">
+    <h1 class="app-title">jira uygulaması</h1>
+
+    <div class="theme-toggle" id="theme-toggle">
+      <div class="theme-toggle-icon-container" id="theme-toggle-icon-container">
+        <i class="fa fa-moon"></i>
+        <i class="fa fa-sun active"></i>
+      </div>
+    </div>
+
+    <div class="drag-container">
+      <ul class="drag-list">
+
+        <!-- * todo ile ilgili -->
+        <li class="drag-column todo-column">
+          <span class="header">
+            <h2>todo</h2>
+          </span>
+
+          <div id="todo-content">
+            <ul class="drag-item-list" id="todo-list" ondragover="allow_drop(event)" ondragenter="drag_enter(0)" ondrop="drop(event)" ondragend="drag_end()"></ul>
+          </div>
+
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+
+          <div class="add-btn-group">
+            <div class="add-btn" onclick="show_item_div(0)">
+              <span class="plus-span">+</span>
+            </div>
+            <div class="add-btn update" onclick="hide_item_div(0)">
+              <span>kaydet</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- * inprogress ile ilgili -->
+        <li class="drag-column inProgress-column">
+          <span class="header">
+            <h2>in progress</h2>
+          </span>
+
+          <div id="inProgress-content">
+            <ul class="drag-item-list" id="inProgress-list" ondragover="allow_drop(event)" ondragenter="drag_enter(1)" ondrop="drop(event)" ondragend="drag_end()"></ul>
+          </div>
+
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+
+          <div class="add-btn-group">
+            <div class="add-btn" onclick="show_item_div(1)">
+              <span class="plus-span">+</span>
+            </div>
+            <div class="add-btn update" onclick="hide_item_div(1)">
+              <span>kaydet</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- * done ile ilgili -->
+        <li class="drag-column done-column">
+          <span class="header">
+            <h2>done</h2>
+          </span>
+
+          <div id="done-content">
+            <ul class="drag-item-list" id="done-list" ondragover="allow_drop(event)" ondragenter="drag_enter(2)" ondrop="drop(event)" ondragend="drag_end()"></ul>
+          </div>
+
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div> 
+          </div>
+
+          <div class="add-btn-group">
+            <div class="add-btn" onclick="show_item_div(2)">
+              <span class="plus-span">+</span>
+            </div>
+            <div class="add-btn update" onclick="hide_item_div(2)">
+              <span>kaydet</span>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </body>
+  <script src="javascript.js"></script>
+  <script src="theme_change.js"></script>
+</html>
